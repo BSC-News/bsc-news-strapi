@@ -166,6 +166,9 @@
     },
     "VideoTrendingCarousel": {
       "type": "boolean"
+    },
+    "HideAds": {
+      "type": "boolean"
     }
   }
 }
