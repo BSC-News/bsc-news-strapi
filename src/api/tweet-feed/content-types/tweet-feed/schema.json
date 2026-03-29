@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tweet_feeds",
+  "info": {
+    "singularName": "tweet-feed",
+    "pluralName": "tweet-feeds",
+    "displayName": "Tweet Feed",
+    "description": "Synced tweet items for breaking news feed"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tweetId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "tweetUrl": {
+      "type": "string",
+      "required": true
+    },
+    "fullText": {
+      "type": "text",
+      "required": true
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "postedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "showInFeed": {
+      "type": "boolean",
+      "default": false
+    },
+    "mediaType": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "image",
+        "video"
+      ],
+      "default": "none"
+    },
+    "previewImageUrl": {
+      "type": "string"
+    }
+  }
+}
